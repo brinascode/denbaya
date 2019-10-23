@@ -28,71 +28,56 @@ class Home extends React.Component{
 	render(){
 		return (
 
-				
-				<Row style={styleArticle1}>
+			<div>
+				<Row style={{width:"100vw",height:"40vw",backgroundColor:"white",marginLeft:"0.01vw"}}>
 
-	
-		
+					<Column small={12} medium={12} >
+							<span>					
+								<h2>					
+									<center> Présentation </center><br />
+								</h2>
 
-<Column small={12} medium={12} >
-		<span>					
-		<h2>					
-			<center> 
-				
-				Présentation 
-				
-			</center><br />
-			
-		</h2>
-
-	 <nav aria-label="You are here:" role="navigation">
-	    <Breadcrumbs>
-	      	  <BreadcrumbItem isDisabled>
-		      	  <Link to="/quisommesnous" style={{color:"black"}}>
-		      	  Présentation
-		      	  </Link>
-	      	  </BreadcrumbItem>
-		      <BreadcrumbItem>
-		      	  <Link to="/pourquoidenbaya" style={{color:"black"}} >
-		      	  Pourquoi Denbaya?
-		      	  </Link>
-		      </BreadcrumbItem>
-		      <BreadcrumbItem>
-			      <Link to="/lebureau" style={{color:"black"}}>
-			      Le Bureau
-			      </Link>
-		      </BreadcrumbItem>
-		    
-		      	    </Breadcrumbs>
-  </nav>	
-	
-
-	</span>
-</Column>
+								<nav aria-label="You are here:" role="navigation">
+									<Breadcrumbs>
+											<BreadcrumbItem isDisabled>
+											<h3>
+												<a href="/quisommesnous" style={{color:"black"}}>
+												*  Présentation  
+												</a>
+											</h3>
+											</BreadcrumbItem>
+											<BreadcrumbItem>
+											<h3>
+												<a href="/pourquoidenbaya" style={{color:"black"}} >
+												*   Pourquoi Denbaya?  
+												</a>
+											</h3>
+											</BreadcrumbItem>
+											<BreadcrumbItem>
+											<h3>
+												<a href="/lebureau" style={{color:"black"}}>
+												*  Le Bureau  
+												</a>
+											</h3>
+											</BreadcrumbItem>
+									</Breadcrumbs>
+								</nav>	
+					
+						</span>
+					</Column>
 
 
+					<Column small={12} medium={12} large={12} style={{backgroundImage:"url('images/abidjanencore.png')",backgroundSize:100+"%",backgroundPosition:"center"}}>
+						<br /><br /><br /><br /><br /><br /><br /><br /><br />
+					</Column>
 
-	
+					<Column small={12} medium={9} >
+						<h3>  Présentation </h3>
+						<p></p>
+					</Column>
 
-
-<Column small={12} medium={12} large={12} style={{backgroundImage:"url('images/abidjanencore.png')",backgroundSize:100+"%",backgroundPosition:"center"}}>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-</Column>
-
-<Column small={12} medium={9} >
-	<h3>  Présentation </h3>
-	<p>
-		
-	</p>
-</Column>
-
-
-
-
-						
-
-
-				</Row>
+			</Row>
+					</div>
 				
 			)
 	}

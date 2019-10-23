@@ -7,7 +7,7 @@ import { Colors,Sizes, ButtonGroup,Button, Row, Column, TopBar, TopBarTitle,TopB
 
 //Routing
 import {Route, Switch} from "react-router";
-import Footer from "./Footer"
+
 
 class Header extends React.Component{
 
@@ -15,67 +15,41 @@ class Header extends React.Component{
 
 		return (
 
+            <div style={{backgroundColor:"white"}}>
+                   
+                            <Row large={12} style={{backgroundColor:"white",width:"101vw",borderBottom:"solid",borderColor:"black"}}>
 
-             <ResponsiveNavigation> 
+                                <Column small={12} medium={12} large={12}> 
+                                    <center>  <img src="images/logo.png" width="50%"/> </center>
+                                </Column>
 
-           
-               
-             
-                  <TopBar className="navbar">
+                                <Column small={3} medium={3} large={3} style={{backgroundColor:"black",color:"white"}}>
+                                            <a href='/'>
+                                                <h3 style={{color:"white"}}> <center>Acceuile </center> </h3>
+                                            </a>
+                                </Column>
 
-                      <span> <img src="images/logo.png" width="30%"/> </span>
-                      <Row>
-                          <Column>
-                    
-                            <TopBarRight className="navbar__left">
- 
-                                    <ButtonGroup size={Sizes.SMALL}>
+                                <Column small={3} medium={3} large={3} style={{backgroundColor:"black",color:"white"}}>   
+                                    <a href='/quisommesnous'> 
+                                            <h3 style={{color:"white"}}> <center> Qui sommes nous? </center> </h3>
+                                    </a>
+                                </Column>
 
-                                     <Link to='/'>
-                                               <Button  color={Colors.WARNING} isHollow>
-                                           
-                                                    Acceuile
-                                               
-                                               </Button>
-                                          </Link>
-                                            
-                                          <Link to='/quisommesnous'>
-                                               <Button  color={Colors.SUCCESS} isHollow>
-                                           
-                                                    Qui sommes nous? 
-                                               
-                                               </Button>
-                                          </Link>
+                                <Column small={3} medium={3} large={3} style={{backgroundColor:"black",color:"white"}}>      
+                                    <h3 style={{color:"white"}}> <center> Que faisons nous? </center> </h3>     
+                                </Column>
 
+                                <Column small={3} medium={3} large={3} style={{backgroundColor:"black",color:"white"}}>
+                                    <h3 style={{color:"white"}}> <center>Pour nous rejoindre </center> </h3>
+                                </Column>
 
+                           
+                                        
+                            </Row> 
 
-                                           <Button  color={Colors.ALERT} isHollow>
-                                            
-                                             Que faisons nous?
-                                          </Button>
-                                           <Button color={Colors.WARNING} isHollow >
+                        
 
-                                              Comment nous réjoindre?
-                                          </Button>
-
-                                          <Link to="/connexion">
-                                                <Button  color={Colors.SECONDARY}>
-                                                    Connexion
-                                                </Button>
-                                          
-                                          </Link>
-                                    </ButtonGroup>
-                                   
-                            </TopBarRight>
-
-                          </Column>
-                        </Row> 
-                  </TopBar>
-
-
-            
-
-            </ResponsiveNavigation>
+            </div>
            
 
 
@@ -85,3 +59,46 @@ class Header extends React.Component{
 } 
 
 export default Header
+/*
+
+ <ResponsiveNavigation style={{backgroundColor:"white"}}> 
+
+                        <TopBar className="navbar" large={12} style={{backgroundColor:"white",width:"101vw",borderBottom:"solid",borderColor:"black",marginLeft:"0.01vw"}}>
+
+                            <Row style={{backgroundColor:"white"}}>
+
+                                <Column small={12} medium={12} large={12}> 
+                                    <center>  <img src="images/logo.png" width="130vw"/> </center>
+                                </Column>
+
+                                <Column small={3} medium={3} large={3} style={{}}>
+                                            <Link to='/'>
+                                                <h2> <center>Acceuile </center> </h2>
+                                            </Link>
+                                </Column>
+
+                                <Column small={3} medium={3} large={3} style={{}}>   
+                                    <Link to='/quisommesnous'> 
+                                            <h2> <center> Qui sommes nous? </center> </h2>
+                                    </Link>
+                                </Column>
+
+                                <Column small={3} medium={3} large={3} style={{}}>      
+                                    <h2> <center> Que faisons nous? </center> </h2>     
+                                </Column>
+
+                                <Column small={3} medium={3} large={3} style={{}}>
+                                    <h2> <center>Pour nous rejoindre </center> </h2>
+                                </Column>
+
+                           
+                                        
+                            </Row> 
+
+                        </TopBar>
+
+
+
+                    </ResponsiveNavigation>
+
+*/

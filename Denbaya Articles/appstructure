@@ -1,0 +1,17 @@
+App structure:
+
+- Index.html (the row is in bootstrap tho, not foundation)
+	-index.js
+		- App.js:
+			--Header
+			--Switch for views
+			--Footer
+
+
+MAKE THE STYLES uniform thru a shared variable (main and footer)
+
+
+
+//Foundation UI:
+import Foundation from "react-foundation"
+import { Colors,Sizes, ButtonGroup,Button, Row, Column, TopBar, TopBarTitle,TopBarRight,TopBarLeft, Menu, MenuItem, ResponsiveNavigation, Icon, Label} from "react-foundation"

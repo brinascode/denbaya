@@ -17,13 +17,14 @@ class Footer extends React.Component{
 
 	render(){
 		return (
-				<Row style={{padding:2+"%",margin:"0px",width:100+'%',height:100+"%",color:"white",backgroundColor:"black"}}>
-					
-				
-				<h1> Contacts </h1>
-					
+			<div style={{backgroundColor:"black",height:"10vw",width:"100vw",marginLeft:"0.01vw",color:"white"}}>
+					<Row large={12} style={{backgroundColor:"black",height:"10vw",width:"101vw",marginLeft:"0.01vw",padding:"1vw"}}>
+		
+					Copyrights 
+					</Row>
+   
+		 </div>
 
-				</Row>
 			)
 	}
 }
